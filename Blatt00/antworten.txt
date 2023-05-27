@@ -1,0 +1,38 @@
+Übungsblatt 0
+
+Theoriefragen: Systemumgebung
+1.  Mit dem Parameter -r zeigt ls den Inhalt eines Verzeichnisses in 
+    umgekehrter Reihenfolge an.
+
+2.  Mit dem Befehl man(für Manual) kann eine „Bedienungsanleitung“ für 
+    Unix-Systeme, Befehle, Geräte, Programme, Dateiformate und mehr aufgerufen 
+    werden. Diese „Manpages“ genannte Anleitung erklärt die Benutzung und 
+    Funktion der gesuchte Kommandos.
+    Die beiden man printf Befehle rufen Erläuterungen in unterschiedlichen 
+    Teilen der Manpages auf. Man 1 printf ruft die Standard-Erläuterung des 
+    printf Befehls als User-Befehl (z.B. in der Kommandozeile) auf. Man 3 
+    printf ruft die spezifische Erläuterung des printf-Befehls als Funktion 
+    innerhalb einer C-Bibliothek auf. Generell befinden sich in Teil 1 der 
+    Manpages Erläuterungen zu Kommandozeilenbefehlen und ausführbaren 
+    Programmen, in Teil 3 Erläuterungen zu C-Bibliotheksfunktionen.
+
+3.  Mit dem UNIX-Kommando "mv" kann man Dateien und Ordner verschieben. 
+    Auch gibt es die Möglichkeit mit diesem Kommando eine Datei oder ein 
+    Verzeichnis umzubenennen.
+
+Theoriefragen: Heron verfahren
+1.  P ist der Differenz zwischen die miteinander multiplizierte Seiten und der 
+    Fläche des Rechteck. Je ähnlicher das Rechteck einem Quadrat wird, desto kleiner 
+    wird die Differenz zwischen ihnen. Sobald die Differenz kleiner als p wird, 
+    bedeutet dies, dass das Rechteck quadratisch genug geworden ist.
+
+2.  Das Programm wirft einen Fehler oder gibt eine falsche Antwort. Dies liegt daran, 
+    dass ein Integer-Overflow auftritt, wenn wir versuchen, in einer Integer-Variablen 
+    einen Wert zu speichern, der größer ist als der maximale Wert, den die Variable aufnehmen kann.
+
+3. "A_neu" ist eine lokale Variable, daher wird sie im Stack gespeichert. Der Stack selbst beginnt 
+    bei der höchsten Adresse des Speichers und wächst nach unten, wenn wir weitere Variablen da speichern. 
+    Deswegen wenn wir immer mehr lokale Variablen von "a_new" erstellen, wird auch die Addresse immer kleiner.
+
+4.  Globale Variablen werden in den Datensegment gespeichert. Das Datensegment selbst liegt viel tiefer als das 
+    Stack und das Heap, deshalb ist die Adresse der Float-Variable p auch sehr unterschiedlich.

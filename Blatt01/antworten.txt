@@ -1,0 +1,20 @@
+Theoriefragen:
+
+1.  "fork" erzeugt einen Kindprozess, indem der Prozess, aus dem der Befehl ausgeführt wird, dupliziert wird. 
+    Der Kindprozess erhält einen eigenen Bereich im Speicher, in welchen bei Ausführung des Befehls die Inhalte des Speichers des Elternprozesses kopiert werden.
+    "vfork" vermeidet das aufwendige Kopieren des Speichers, indem der erzeugte Kindprozess auf dieselben Daten zurückgreift, wie der Elternprozess (er darf allerdings Daten nicht verändern).
+    Der Elternprozess wird suspendiert, bis der Kindprozess terminiert oder mit exec ein Programm ausführt.
+    Heute teilen sich Eltern und Kindprozess das gleiche Speichersegment.
+    Mit dem "copy-on-write" Prinzip wird das Segment erst kopiert, wenn der Kindprozess Daten verändert was nicht passiert, wenn zb. nach dem fork direkt ein exec Befehl ausgeführt wird.
+    Die Kombination von fork und copy-on-write ist daher kaum mehr langsamer als vfork, es gibt heutzutage also effektiv keinen Unterschied mehr.
+
+2.  Wenn der Elternprozess erstellt ein Kindprozess, man ruft wait(2) oder waitpid(2) um der Elternprozess zu blockieren, sodass man 
+    sicherstellen kann, dass der Kindprozess seine Arbeit beendet und sich terminiert hat. Ansonst könnte der Kindprozess im Hintergrund
+    weiter Speicher verwenden oder sogar zu andere Problemen führen.
+
+3.  Am Anfang wenn fork wird aufgerufen, wird ein neues Kindprozess erstellt und der Variable 'a' ist gleich 23 für beide Prozesse. Der Kindprozess hat der "pid" gleich 0, und der Elternprozess
+    hat ein positives pid, wegen der Rückgabewert von fork(). Damit wird a = 13 für der Elternprozess und a = 33 für der Kindprozess gesetzt. Somit bekommen wir die folgende Ausgabe auf der Terminal:
+    pa a: 13
+    a: 13
+    ch a: 33
+    a: 33

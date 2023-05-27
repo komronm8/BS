@@ -1,0 +1,24 @@
+Theoriefragen:
+
+1. 
+    A: CCCEEEEEE------CCCEEEEEE--CCCE
+    B: ---CCC-----CCC------CEECC-----
+    C: ------CCEEEEEEC------CEEEEEE-C
+    D: --------CCC-------CCEEEE-C----
+
+2. Der VVR ermöglicht eine verbesserte Verteilung von Ressourcen durch die Anwendung von eine zusätzliche Warteschlange(Vorzugsliste),
+   was zu einer gerechteren Behandlung der Prozesse führt. Das Implementierungsunterschied ist die zusätzliche Warteschlange, die vor
+   der Bereitliste abgearbeitet wird. Bei der Vorzugsliste wird Prozesse nur ihre nicht voll genutzten Zeit zugeteilt.
+
+3. Wenn eine zu lange Zeitscheibe für den Round-Robin-Algorithmus gewählt wird, nähert sich das Verfahren dem First-Come-First-Serve (FCFS) Verfahren an.
+
+
+Programmierung:
+1. Die threads haben keine Synchronization miteinander und deswegen wird die Vaiable, des Anzahls von tüten gleichzeitig benutzt und geändert. Somit wird 
+   auf dem Terminal mehrmals die gleiche Azahl von Tüten oder mit dem falschen Reihnfolge geprinted.
+
+2. Dieses Situtation nennt man Race Condition
+
+3. Sei das Variable a = 2 und 'printA' ein einfaches funktion die das Anzahl von a zuerst inkrementiert und am ende a ausgibt. Man erstellt zum Zeitpunkt t0
+   zwei Threads für das Funktion 'printA'. Thread1 inkrementiert a und gibt das Anzahl als 1 aus, Thread2 sollte eigentlich dann a als 0 ausgeben, aber da 
+   eine Race Condition auftritt wird a als 1 ausgegeben.
