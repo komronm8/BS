@@ -1,0 +1,19 @@
+Theoriefragen:
+
+A:
+1.  Die Betriebsmittel in diesem Fall sind die Liste mit dem Noten und der Karton mit den Klausuren.
+    Die beide sind wiederverwendbar. Da sie für eine bestimmte Zeit belegt und anschließend wieder 
+    freigegeben werden
+
+2.  Mutual Exclusion: Beide Rescourcen sind nicht teilbar, das heißt nur ein Mitarbeiter kann das Karton
+    oder die Liste behalten oder benutzen.
+    Hold and Wait: Wenn eine der Mitarbeiter hat der Karton, er wartet auf die Liste oder andersfall der
+    andere Mitarbeiter hat die Liste und wartet auf der Karton mit den Klausuren.
+    No Preemption: Hier ist der Fall das man der Karton von dem Mitarbeiter nicht nehmen kann außer wenn er
+    das selbst freigibt.
+    Um wirklich eine Verklemmung zu entstehen, muss noch Circular Wait erfüllt sein. Zwei oder mehrere 
+    Prozesse müssen aufeinander warten. 
+
+3.  Ein Livelock besteht hier nicht, weil die zwei Mitarbeiter warten aufeinander und machen keine änderungen.
+    Sie sind in dem Zustand Block und nicht Running. 
+
