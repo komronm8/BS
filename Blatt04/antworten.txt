@@ -1,0 +1,30 @@
+Theoriefragen
+
+A:
+
+0 = --------------------------------
+1 = AA|--|----|--------|----------------
+2 = AA|B|-|----|--------|----------------
+3 = AA|B|-|----|--------|CCCCCCCCCCCCCCCC
+4 = AA|B|-|DD|--|--------|CCCCCCCCCCCCCCCC
+5 = AA|B|-|DD|--|EEEE|----|CCCCCCCCCCCCCCCC
+6 = AA|B|-|----|EEEE|----|CCCCCCCCCCCCCCCC
+7 = --|B|-|----|EEEE|----|CCCCCCCCCCCCCCCC
+8 = --|B|-|----|EEEE|----|CCCCCCCCCCCCCCCC   (F abgelehnt)
+9 = --|B|G|----|EEEE|----|CCCCCCCCCCCCCCCC
+
+B:
+    a. Unter Verschnitt versteht man, die Verschwendung von Speicherplätze in der Speicher. Es gibt externer
+    und interner Verschnitte. Wenn außerhalb der zugeteilten Speicherbereiche exestieren Speicherplätze, die 
+    nicht mehr genutzt werden, nennt man das externer Verschnitt. Wenn innerhalb der zugeteilten Speicherbereiche
+    passiert so was, dann ist das ein interner Verschnitt.
+
+    b.Beim Best Fit-Verfahren kommt es zu einem externenr Verschnitt. Dies liegt daran, dass das Best Fit-Verfahren 
+    versucht, den verfügbaren Platz so effizient wie möglich zu nutzen, indem es die am besten passenden Lücken
+    auswählt. Somit kann es jedoch vorkommen, dass nach der Zuordnung noch ungenutzter Speicherfragmente in den 
+    Speicher bleibt.
+
+C: 
+    a. Ja, das Betriebssystem muss diesen Fall gesondert behandeln, damit Programme weiterhin auf Daten in der 
+    Seite zugreifen können. Für jedes Programm wird eine logischer Addressraum erstellt. Diese Adresse wird als 
+    Referenz verwendet, um auf den tatsächlichen physischen Speicherort zuzugreifen, mithilfe Übersetzungstabelle.
