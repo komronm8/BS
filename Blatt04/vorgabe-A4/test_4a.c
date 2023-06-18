@@ -13,8 +13,8 @@ int main(void)
 	void *addr[16];
 	int i = 0;
 
-	char *foo = nf_alloc(10);
-	*foo = 'c';
+	// char *foo = nf_alloc(10);
+	// *foo = 'c';
 
 	printf("Aktuelles (leeres) Speicherlayout:\n");
 	dump_memory();
