@@ -1,0 +1,11 @@
+Theoriefragen
+
+1. Verzeichnisse
+"." ist das aktuelle Verzeichnis, also das Verzeichnis in dem sich der Benutzer bzw. der Konsolenprozess gerade
+befindet. ".." ist das dem aktuellen Verzeichnis übergeordnete Verzeichnis.
+
+2.Peripheriegeräte
+Zeichenorientierte Geräte geben bzw lesen einen kontinuierlichen Zeichenfluss bzw Zeichenstrom (z.B. Tastatur 
+liefert auf Tastendruck sofort das gewählte Zeichen) und haben meist rein sequentieller Zugriff. 
+Blockorientierte Geräte lesen/liefern Daten in Blöcken (z.B. Speichergeräte lesen/schreiben nicht einzelne 
+Bits/Bytes sondern je nach Formatierung Blockweise) und haben meist wahlfreie blockweise Zugriff.
